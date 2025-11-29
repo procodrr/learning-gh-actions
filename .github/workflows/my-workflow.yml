@@ -12,3 +12,5 @@ jobs:
         uses: actions/checkout@v6
       - name: List all files
         run: ls -a
+      - name: Print workflow file contents.
+        run: cat ./.github/workflows/my-workflow.yml
