@@ -8,18 +8,5 @@ jobs:
         run: ls -a
       - name: Print Working Directory
         run: pwd
-      - name: Create JS File
-        run: echo 'console.log("Hello World!");' > app.js
-      - name: List all files
-        run: ls -a
-      - name: Run Node.js File
-        run: node app.js
-
-  my-second-job:
-    runs-on: ubuntu-latest
-    needs: my-first-job
-    steps:
-      - name: Print Node.js Version
-        run: node -v
-      - name: Print all files
-        run: ls -a
+      - name: Checkout Repo
+        uses: actions/checkout@v6
