@@ -4,6 +4,4 @@ jobs:
   my-first-job:
     runs-on: ubuntu-latest
     steps:
-        - run: ls -a
-        - run: touch app.js
-        - run: ls -a
+        - run: echo ${{true}}
