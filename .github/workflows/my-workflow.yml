@@ -4,4 +4,4 @@ jobs:
   my-first-job:
     runs-on: ubuntu-latest
     steps:
-        - run: echo ${{true}}
+        - run: echo ${{5 > 4}}
