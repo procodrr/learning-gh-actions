@@ -2,6 +2,9 @@ name: My first workflow
 on: [push, workflow_dispatch]
 jobs:
   my-first-job:
+    env: 
+      TEST: "My test variable."
+      HELLO: "Hello World"
     runs-on: ubuntu-latest
     steps:
         - run: echo "${{toJson(env)}}"
